@@ -1,0 +1,51 @@
+:root {
+  /* Colors */
+  --color-primary: #5a32fa;
+  --color-primary-hover: #4a21ea;
+  --color-secondary: #ff3366;
+  --color-bg: #fdfdfd;
+  --color-bg-alt: #f5f5fa;
+  --color-text: #1a1a2e;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-footer-bg: #0b1120;
+  --color-footer-text: #94a3b8;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #5a32fa, #ff3366);
+  --gradient-text: linear-gradient(135deg, #5a32fa, #ff3366);
+  
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 30px rgba(90, 50, 250, 0.3);
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  --color-bg: #0d1117;
+  --color-bg-alt: #161b22;
+  --color-text: #e6edf3;
+  --color-text-muted: #7d8590;
+  --color-border: #30363d;
+  --color-footer-bg: #010409;
+  --color-footer-text: #7d8590;
+  --shadow-sm: 0 1px 2px 0 rgba(0,0,0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0, 0.5);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.5);
+}

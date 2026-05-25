@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security - OneAtlas</title>
+  <link rel="stylesheet" href="../../shared/css/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container flex justify-between items-center header-inner">
+      <div class="logo flex items-center gap-4">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="url(#paint0_linear)"/>
+          <path d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="paint0_linear" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#5A32FA"/>
+              <stop offset="1" stop-color="#FF3366"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">OneAtlas</span>
+      </div>
+      <nav class="nav flex gap-8 items-center">
+        <a href="#" class="nav-link">Product <span class="chevron">▾</span></a>
+        <a href="#" class="nav-link">Solutions <span class="chevron">▾</span></a>
+        <a href="#" class="nav-link">Resources <span class="chevron">▾</span></a>
+        <a href="#" class="nav-link">Enterprise</a>
+        <a href="../pricing/index.html" class="nav-link">Pricing</a>
+        <a href="#" class="nav-link active">Security</a>
+        <button class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--color-bg);border:1px solid var(--color-border);color:var(--color-text-muted);cursor:pointer;transition:all 0.2s ease;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </nav>
+      <div class="auth-buttons flex gap-4 items-center">
+        <a href="../signin/index.html" class="btn-text">Log in</a>
+        <a href="../signup/index.html" class="btn btn-primary">Start building free →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="security-hero container flex items-center justify-between gap-8">
+    <div class="hero-content">
+      <span class="badge badge-green">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Secure infrastructure for modern AI applications
+      </span>
+      <h1 class="hero-title">Security that <br><span class="text-gradient">helps AI teams</span><br> ship confidently</h1>
+      <p class="hero-subtitle">Built with modern security practices to help protect your applications, users, and data. We handle infrastructure, isolation, and operational safeguards—so you can focus on building.</p>
+      <div class="hero-actions flex gap-4">
+        <a href="#" class="btn btn-primary">Start building free →</a>
+        <a href="#" class="btn btn-outline">Learn more</a>
+      </div>
+    </div>
+    
+    <div class="hero-visual">
+      <div class="center-orb">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="white"/>
+          <path d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20" stroke="url(#paint0_linear)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      
+      <div class="orbit-rings">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+      </div>
+      
+      <div class="floating-cards">
+        <div class="f-card f-card-1">
+          <div class="f-icon">🔒</div>
+          <div class="f-text">
+            <strong>Isolated runtimes</strong>
+            <span>Each execution runs in its own isolated environment</span>
+          </div>
+        </div>
+        <div class="f-card f-card-2">
+          <div class="f-icon">🌐</div>
+          <div class="f-text">
+            <strong>Smart routing</strong>
+            <span>Requests are routed to the best available provider</span>
+          </div>
+        </div>
+        <div class="f-card f-card-3">
+          <div class="f-icon">🛡️</div>
+          <div class="f-text">
+            <strong>Data protection by default</strong>
+            <span>Encryption in transit and at rest</span>
+          </div>
+        </div>
+        <div class="f-card f-card-4">
+          <div class="f-icon">⚡</div>
+          <div class="f-text">
+            <strong>High availability</strong>
+            <span>Globally distributed infrastructure for reliability</span>
+          </div>
+        </div>
+        <div class="f-card f-card-5">
+          <div class="f-icon">👤</div>
+          <div class="f-text">
+            <strong>Access controls</strong>
+            <span>Granular permissions and workspace-level isolation</span>
+          </div>
+        </div>
+        <div class="f-card f-card-6">
+          <div class="f-icon">📊</div>
+          <div class="f-text">
+            <strong>Operational visibility</strong>
+            <span>Real-time monitoring and request visibility</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted Infrastructure -->
+  <section class="container trusted-infra text-center">
+    <p class="text-muted text-left mb-4">Built on trusted AI and cloud infrastructure</p>
+    <div class="infra-logos flex gap-8 items-center justify-between">
+      <span class="infra-logo font-bold">OpenAI</span>
+      <span class="infra-logo font-bold">ANTHROPIC</span>
+      <span class="infra-logo font-bold">Meta</span>
+      <span class="infra-logo font-bold">Google Cloud</span>
+      <span class="infra-logo font-bold">CLOUDFLARE</span>
+      <span class="infra-logo font-bold">Vercel</span>
+    </div>
+  </section>
+
+  <!-- Built for AI Applications -->
+  <section class="container ai-apps">
+    <div class="ai-apps-grid">
+      <div class="ai-app-title">
+        <h2>Built for<br>AI applications</h2>
+      </div>
+      <div class="feature-card">
+        <div class="icon-wrapper text-primary bg-purple-light"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Your data</h3>
+        <p>Customer data is isolated and not used for model training.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-wrapper text-pink bg-pink-light"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Your users</h3>
+        <p>Enterprise-grade Clerk authentication and role-based access controls.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-wrapper text-orange bg-orange-light"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3>Your apps</h3>
+        <p>Workloads run in isolated environments with scoped access controls.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-wrapper text-teal bg-teal-light"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Your team</h3>
+        <p>Granular permissions and visibility across workspaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flow Diagram -->
+  <section class="container flow-section">
+    <h2>How requests are<br>processed securely</h2>
+    <div class="flow-diagram flex justify-between items-center">
+      <div class="flow-step">
+        <div class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <span>Client</span>
+      </div>
+      <div class="flow-arrow">--&gt;</div>
+      <div class="flow-step">
+        <div class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <span>Edge</span>
+      </div>
+      <div class="flow-arrow">--&gt;</div>
+      <div class="flow-step active-step">
+        <div class="flow-icon bg-primary text-white"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <span>Routing</span>
+      </div>
+      <div class="flow-arrow">--&gt;</div>
+      <div class="flow-step">
+        <div class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <span>Runtime</span>
+      </div>
+      <div class="flow-arrow">--&gt;</div>
+      <div class="flow-step">
+        <div class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+        <span>Datastore</span>
+      </div>
+      <div class="flow-arrow">--&gt;</div>
+      <div class="flow-step">
+        <div class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <span>Observability</span>
+      </div>
+    </div>
+    
+    <div class="flow-badges flex justify-center gap-4">
+      <span class="badge badge-outline"><span class="text-green">✓</span> TLS 1.2+ everywhere</span>
+      <span class="badge badge-outline"><span class="text-blue">🔗</span> Encrypted channels</span>
+      <span class="badge badge-outline"><span class="text-purple">🛡️</span> Least-privilege access</span>
+      <span class="badge badge-outline"><span class="text-blue">🔒</span> Audit logs</span>
+      <span class="badge badge-outline"><span class="text-teal">📍</span> Region-aware routing</span>
+    </div>
+  </section>
+
+  <!-- Security Features Grid -->
+  <section class="container security-features">
+    <h2>Security features</h2>
+    <div class="features-grid">
+      <div class="f-box">
+        <div class="f-box-icon text-primary"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h4>Access & identity</h4>
+        <p>Role-based access, SSO support, and secure session management.</p>
+      </div>
+      <div class="f-box">
+        <div class="f-box-icon text-pink"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div>
+        <h4>Secrets management</h4>
+        <p>Secrets and credentials are encrypted and scoped to authorized environments.</p>
+      </div>
+      <div class="f-box">
+        <div class="f-box-icon text-orange"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <h4>Runtime isolation</h4>
+        <p>Isolated Cloudflare Edge environments with V8 sandboxing and resource limits.</p>
+      </div>
+      <div class="f-box">
+        <div class="f-box-icon text-teal"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19C15.3 19 13.5 17.2 13.5 15C13.5 12.8 15.3 11 17.5 11C19.7 11 21.5 12.8 21.5 15C21.5 17.2 19.7 19 17.5 19ZM20.9 9C19.9 8.4 18.7 8 17.5 8C13.6 8 10.5 11.1 10.5 15C10.5 16.2 10.9 17.4 11.5 18.4C6.5 18.1 2.5 13.9 2.5 8.9C2.5 3.4 7 -1.1 12.5 -1.1C18  -1.1 22.5 3.4 22.5 8.9V9H20.9Z"/></svg></div>
+        <h4>Data access control</h4>
+        <p>Neon Postgres schema isolation and granular Prisma-level CRUD permissions.</p>
+      </div>
+      <div class="f-box">
+        <div class="f-box-icon text-blue"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <h4>Audit & logs</h4>
+        <p>Operational logs and request visibility for debugging and monitoring.</p>
+      </div>
+      <div class="f-box">
+        <div class="f-box-icon text-purple"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h4>Security best practices</h4>
+        <p>Infrastructure and workflows designed with modern security standards in mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compliance & Certifications -->
+  <section class="container compliance-section" style="margin-bottom: 6rem; padding: 4rem; background: var(--color-bg-alt); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Compliance & Certifications</h2>
+    <p class="text-muted" style="max-width: 600px; margin-bottom: 3rem;">We hold ourselves to the highest standards of security and privacy compliance, ensuring your data is always protected.</p>
+    
+    <div class="compliance-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+      <div class="compliance-card" style="background: var(--color-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">SOC 2 Type II</h3>
+        <p class="text-muted" style="font-size: 0.9rem;">Our infrastructure and operations are regularly audited by independent third-party firms for strict security controls.</p>
+      </div>
+      <div class="compliance-card" style="background: var(--color-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">GDPR Ready</h3>
+        <p class="text-muted" style="font-size: 0.9rem;">Full support for data residency, Right to be Forgotten, and strict data processing agreements for European customers.</p>
+      </div>
+      <div class="compliance-card" style="background: var(--color-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">HIPAA Compliant</h3>
+        <p class="text-muted" style="font-size: 0.9rem;">Available on Enterprise tiers. We sign BAAs and provide the necessary controls for protected health information (PHI).</p>
+      </div>
+      <div class="compliance-card" style="background: var(--color-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Penetration Testing</h3>
+        <p class="text-muted" style="font-size: 0.9rem;">Bi-annual network and application layer penetration tests performed by leading independent security researchers.</p>
+      </div>
+      <div class="compliance-card" style="background: var(--color-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Vulnerability Scanning</h3>
+        <p class="text-muted" style="font-size: 0.9rem;">Continuous automated scanning of our container registries, dependencies, and Edge runtimes.</p>
+      </div>
+      <div class="compliance-card" style="background: var(--color-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Bug Bounty</h3>
+        <p class="text-muted" style="font-size: 0.9rem;">We operate a private bug bounty program with strict SLAs for critical vulnerability remediation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="container cta-section">
+    <div class="cta-card flex justify-between items-center">
+      <div class="cta-content">
+        <h2>Build AI products on infrastructure<br>designed for reliability and security.</h2>
+        <p>Focus on product development while OneAtlas<br>handles execution, routing, isolation, and<br>operational safeguards.</p>
+      </div>
+      <a href="#" class="btn btn-light-large">Start building free →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo flex items-center gap-4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="url(#paint1_linear)"/>
+            <path d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="paint1_linear" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5A32FA"/>
+                <stop offset="1" stop-color="#FF3366"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">OneAtlas</span>
+        </div>
+        <p class="footer-desc text-muted">Secure infrastructure layer<br>for modern AI applications.</p>
+        <div class="social-icons flex gap-4">
+          <a href="#" class="social-icon text-muted"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="#" class="social-icon text-muted"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" class="social-icon text-muted"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Templates</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">API Reference</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom flex justify-between items-center text-muted">
+      <p>&copy; 2025 OneAtlas, Inc. All rights reserved.</p>
+      <div class="footer-bottom-links flex gap-8">
+        <a href="#">security@oneatlas.dev</a>
+        <a href="#">Report a vulnerability</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../shared/js/theme.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

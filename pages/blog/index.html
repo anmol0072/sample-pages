@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneAtlas Blog - Insights</title>
+  <link rel="stylesheet" href="../../shared/css/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container flex justify-between items-center header-inner">
+      <div class="logo flex items-center gap-4">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="url(#paint0_linear)"/>
+          <path d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="paint0_linear" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#5A32FA"/>
+              <stop offset="1" stop-color="#FF3366"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">OneAtlas</span>
+      </div>
+      <nav class="nav flex gap-8 items-center">
+        <a href="#" class="nav-link">Platform <span class="chevron">▾</span></a>
+        <a href="#" class="nav-link">Solutions <span class="chevron">▾</span></a>
+        <a href="#" class="nav-link">Resources <span class="chevron">▾</span></a>
+        <a href="#" class="nav-link">Enterprise</a>
+        <a href="../pricing/index.html" class="nav-link">Pricing</a>
+      
+        <button class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--color-bg);border:1px solid var(--color-border);color:var(--color-text-muted);cursor:pointer;transition:all 0.2s ease;margin-left:1rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </nav>
+      <div class="auth-buttons flex gap-4 items-center">
+        <button class="search-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+        <a href="../signup/index.html" class="btn btn-primary">Start Building →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="blog-hero container flex justify-between items-center">
+    <div class="hero-content">
+      <div class="badge-tag"><span class="dot-pink"></span> BLOG</div>
+      <h1 class="hero-title">Insights for <br>AI-native builders</h1>
+      <p class="hero-subtitle">Thoughts, tutorials, and updates on building the next generation of software with AI.</p>
+    </div>
+    <div class="hero-visual">
+      <div class="stacked-cards">
+        <div class="s-card s-card-3"></div>
+        <div class="s-card s-card-2"></div>
+        <div class="s-card s-card-1 flex items-center justify-center">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 22L12 2l8 20"/><path d="M8 12h8"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="container filters-section flex justify-between items-center">
+    <div class="filter-tabs flex gap-2">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Product</button>
+      <button class="filter-btn">Engineering</button>
+      <button class="filter-btn">Guides</button>
+      <button class="filter-btn">Use Cases</button>
+      <button class="filter-btn">Company</button>
+      <button class="filter-btn">Updates</button>
+    </div>
+    <div class="filter-sort">
+      <button class="sort-btn">Latest <span class="chevron">▾</span></button>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <section class="container blog-layout flex gap-8">
+    <div class="main-articles">
+      <!-- Featured Article -->
+      <a href="#" class="featured-article">
+        <div class="featured-bg"></div>
+        <div class="featured-content">
+          <span class="badge badge-transparent">FEATURED</span>
+          <h2>Scaling OneAtlas with<br>Cloudflare & Neon Postgres</h2>
+          <p>How we unified Next.js, Cloudflare Edge Workers, and Neon to build a low-cost, serverless AI platform.</p>
+          <div class="article-meta">
+            <span>May 20, 2026</span> <span class="dot">·</span> <span>8 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Article List -->
+      <div class="article-list">
+        <a href="#" class="article-card flex gap-6 items-center">
+          <div class="article-img bg-purple-gradient">
+            <div class="img-placeholder-1"></div>
+          </div>
+          <div class="article-info">
+            <span class="category text-primary">PRODUCT</span>
+            <h3>Why we chose Next.js and shadcn/ui</h3>
+            <p>Our philosophy behind generating React applications and the component-first AI architecture.</p>
+            <div class="article-meta text-muted">
+              <span>May 18, 2026</span> <span class="dot">·</span> <span>6 min read</span>
+            </div>
+          </div>
+          <div class="article-arrow">→</div>
+        </a>
+
+        <a href="#" class="article-card flex gap-6 items-center">
+          <div class="article-img bg-blue-gradient">
+            <div class="img-placeholder-2"></div>
+          </div>
+          <div class="article-info">
+            <span class="category text-blue">ENGINEERING</span>
+            <h3>Securing Multi-Tenant Apps with Clerk</h3>
+            <p>A deep dive into integrating Clerk Auth and Prisma Row-Level Security for generated CRUD applications.</p>
+            <div class="article-meta text-muted">
+              <span>May 15, 2026</span> <span class="dot">·</span> <span>10 min read</span>
+            </div>
+          </div>
+          <div class="article-arrow">→</div>
+        </a>
+
+        <a href="#" class="article-card flex gap-6 items-center">
+          <div class="article-img bg-teal-gradient">
+            <div class="img-placeholder-3"></div>
+          </div>
+          <div class="article-info">
+            <span class="category text-teal">GUIDES</span>
+            <h3>Building AI workflows that scale</h3>
+            <p>Best practices for designing reliable, observable, and evolvable workflows.</p>
+            <div class="article-meta text-muted">
+              <span>May 14, 2026</span> <span class="dot">·</span> <span>9 min read</span>
+            </div>
+          </div>
+          <div class="article-arrow">→</div>
+        </a>
+
+        <a href="#" class="article-card flex gap-6 items-center">
+          <div class="article-img bg-orange-gradient">
+            <div class="img-placeholder-4"></div>
+          </div>
+          <div class="article-info">
+            <span class="category text-orange">USE CASES</span>
+            <h3>From idea to app in minutes</h3>
+            <p>See how teams are using OneAtlas to go from idea to production—10x faster.</p>
+            <div class="article-meta text-muted">
+              <span>May 12, 2026</span> <span class="dot">·</span> <span>5 min read</span>
+            </div>
+          </div>
+          <div class="article-arrow">→</div>
+        </a>
+      </div>
+      
+      <div class="load-more flex justify-center">
+        <button class="btn btn-outline">Load more</button>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="blog-sidebar">
+      <!-- Newsletter Widget -->
+      <div class="widget newsletter-widget">
+        <div class="widget-icon text-primary"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <h3>Stay in the loop</h3>
+        <p>Get the latest insights, product updates, and tutorials—straight to your inbox.</p>
+        <form class="newsletter-form flex gap-2" action="#">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Popular Topics -->
+      <div class="widget topics-widget">
+        <h3>Popular topics</h3>
+        <ul class="topic-list">
+          <li><a href="#" class="flex justify-between items-center"><span class="flex items-center gap-2"><span class="topic-icon">🤖</span> AI Agents</span> <span class="topic-count text-muted">24</span></a></li>
+          <li><a href="#" class="flex justify-between items-center"><span class="flex items-center gap-2"><span class="topic-icon">⚙️</span> Workflows</span> <span class="topic-count text-muted">18</span></a></li>
+          <li><a href="#" class="flex justify-between items-center"><span class="flex items-center gap-2"><span class="topic-icon">📢</span> Product Updates</span> <span class="topic-count text-muted">16</span></a></li>
+          <li><a href="#" class="flex justify-between items-center"><span class="flex items-center gap-2"><span class="topic-icon">📚</span> Guides</span> <span class="topic-count text-muted">14</span></a></li>
+          <li><a href="#" class="flex justify-between items-center"><span class="flex items-center gap-2"><span class="topic-icon">💻</span> Engineering</span> <span class="topic-count text-muted">12</span></a></li>
+        </ul>
+        <a href="#" class="view-all text-primary">View all topics →</a>
+      </div>
+
+      <!-- Latest News -->
+      <div class="widget latest-widget">
+        <h3>Latest from OneAtlas</h3>
+        <div class="latest-list">
+          <a href="#" class="latest-item">
+            <h4>OneAtlas Copilot in production</h4>
+            <span class="text-muted">May 10, 2026</span>
+          </a>
+          <a href="#" class="latest-item">
+            <h4>New integrations: Slack, GitHub, and more</h4>
+            <span class="text-muted">May 9, 2026</span>
+          </a>
+          <a href="#" class="latest-item">
+            <h4>OneAtlas raises $15M Series A</h4>
+            <span class="text-muted">May 7, 2026</span>
+          </a>
+        </div>
+        <a href="#" class="view-all text-primary">View all updates →</a>
+      </div>
+    </aside>
+  </section>
+
+  <script src="./script.js"></script>
+<script src="../../shared/js/theme.js"></script>
+</body>
+</html>

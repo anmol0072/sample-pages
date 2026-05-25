@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneAtlas Documentation</title>
+  <link rel="stylesheet" href="../../shared/css/base.css">
+  <link rel="stylesheet" href="./style.css?v=4">
+</head>
+<body>
+  <div class="docs-layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar-left">
+      <div class="sidebar-header">
+        <div class="logo flex items-center gap-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="url(#paint0_linear)"/>
+            <path d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="paint0_linear" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5A32FA"/>
+                <stop offset="1" stop-color="#FF3366"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text font-bold">OneAtlas</span>
+        </div>
+      </div>
+      
+      <div class="sidebar-scroll">
+        <div class="nav-group">
+          <h4 class="nav-title">GET STARTED</h4>
+          <ul>
+            <li><a href="#" class="nav-item active"><span class="nav-icon">🏠</span> Welcome</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">⚡</span> Quickstart</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">❓</span> What is OneAtlas?</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">💡</span> How it works</a></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <h4 class="nav-title">INTEGRATIONS</h4>
+          <ul>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🐘</span> PostgreSQL & Neon</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">☁️</span> Cloudflare Edge</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🔐</span> Clerk Auth</a></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <h4 class="nav-title">ENGINES</h4>
+          <ul>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🧠</span> AI Engine</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🤖</span> Agent System</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🧩</span> Template Engine</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">⚙️</span> Workflow Engine</a></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <h4 class="nav-title">CORE PACKAGES</h4>
+          <ul>
+            <li><a href="#" class="nav-item"><span class="nav-icon">📄</span> Contracts</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">📦</span> Shared Types</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🎨</span> UI Components</a></li>
+            <li><a href="#" class="nav-item flex justify-between"><span><span class="nav-icon">🔌</span> API Reference</span> <span class="badge-api">Hono</span></a></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <h4 class="nav-title">DEPLOYMENT</h4>
+          <ul>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🌐</span> Subdomain Routing</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🛡️</span> Edge Isolation</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🗄️</span> R2 Storage</a></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <h4 class="nav-title">AI MODELS</h4>
+          <ul>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🟣</span> Claude Integration</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🔵</span> Gemini Support</a></li>
+            <li><a href="#" class="nav-item"><span class="nav-icon">🟢</span> OpenAI Fallback</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="sidebar-footer">
+        <a href="#" class="changelog-card">
+          <div class="changelog-icon">🔄</div>
+          <div class="changelog-text">
+            <strong>Changelog</strong>
+            <span>Latest updates to OneAtlas</span>
+          </div>
+          <div class="changelog-arrow">→</div>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-area">
+      <header class="topbar flex justify-between items-center">
+        <div class="search-container">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" placeholder="Search docs, APIs, examples...">
+          <div class="search-shortcuts">
+            <kbd>⌘K</kbd>
+            <span class="badge-ai">✨ AI</span>
+          </div>
+        </div>
+        <div class="topbar-right flex items-center gap-4">
+          <nav class="top-nav flex items-center gap-1">
+            <a href="#" class="top-nav-link">API</a>
+            <a href="#" class="top-nav-link">Examples</a>
+            <a href="#" class="top-nav-link">Guides</a>
+            <a href="#" class="top-nav-link">Changelog</a>
+          </nav>
+          <div class="nav-divider" style="width: 1px; height: 24px; background: var(--color-border);"></div>
+          <button class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <a href="../signup/index.html" class="btn btn-primary btn-sm">Start Building →</a>
+        </div>
+      </header>
+
+      <div class="content-scroll flex">
+        <div class="content-body">
+          <div class="content-header relative">
+            <span class="badge-native text-primary">✨ AI-NATIVE DEVELOPMENT PLATFORM</span>
+            <h1 class="docs-title">Build and ship<br>AI apps, <span class="text-gradient">faster.</span></h1>
+            <p class="docs-subtitle">OneAtlas gives you the tools to build, deploy, and scale production-ready AI applications.</p>
+            <div class="header-actions flex gap-4">
+              <button class="btn btn-primary">Start Building →</button>
+              <button class="btn-play"><span class="play-icon">▶</span> Watch overview</button>
+            </div>
+            
+            <div class="header-visual">
+              <div class="visual-orb"></div>
+              <div class="visual-ring"></div>
+              <div class="v-label" style="top: 10%; right: 20%;">📦 Deploy</div>
+              <div class="v-label" style="top: 30%; right: 5%;">⚙️ Workflows</div>
+              <div class="v-label" style="bottom: 20%; left: 10%;">🤖 Agents</div>
+              <div class="v-label" style="bottom: 10%; right: 30%;">📚 Memory</div>
+              <div class="v-label" style="bottom: 30%; right: 10%;">🛠️ Tools</div>
+            </div>
+          </div>
+
+          <div class="role-selector grid-4">
+            <button class="role-btn">
+              <span class="role-icon text-purple">⌘</span>
+              <div class="role-text">
+                <strong>For Founders</strong>
+                <span>Ship products faster</span>
+              </div>
+            </button>
+            <button class="role-btn">
+              <span class="role-icon text-blue">⚙️</span>
+              <div class="role-text">
+                <strong>For Engineers</strong>
+                <span>Build with power & control</span>
+              </div>
+            </button>
+            <button class="role-btn">
+              <span class="role-icon text-teal">☁️</span>
+              <div class="role-text">
+                <strong>For AI Teams</strong>
+                <span>Operate at scale</span>
+              </div>
+            </button>
+            <button class="role-btn">
+              <span class="role-icon text-orange">🛡️</span>
+              <div class="role-text">
+                <strong>For Enterprises</strong>
+                <span>Secure & govern</span>
+              </div>
+            </button>
+          </div>
+
+          <div class="section-block">
+            <h3>Get started in minutes</h3>
+            <p class="text-muted mb-6">Go from idea to running application.</p>
+            
+            <div class="steps-grid grid-3">
+              <div class="step-card">
+                <div class="step-header">
+                  <div class="step-num">1</div>
+                  <h4>Generate an application</h4>
+                  <button class="copy-btn">📋</button>
+                </div>
+                <p class="step-desc">Use the AI Engine to generate a Next.js UI and Prisma schema.</p>
+                <div class="code-block">
+<pre><code>import { OneAtlas } from 'oneatlas';
+
+await OneAtlas.generate({
+  type: "Admin Panel",
+  database: "neon-postgres"
+});</code></pre>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step-header">
+                  <div class="step-num bg-purple">2</div>
+                  <h4>Build a workflow</h4>
+                  <button class="copy-btn">📋</button>
+                </div>
+                <p class="step-desc">Connect agents, data and logic in a powerful workflow.</p>
+                <div class="workflow-visual">
+                  <div class="w-node">✨</div>
+                  <div class="w-arrow">→</div>
+                  <div class="w-node w-primary">📦</div>
+                  <div class="w-arrow">→</div>
+                  <div class="w-node w-success">✓</div>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step-header">
+                  <div class="step-num bg-purple-dark">3</div>
+                  <h4>Deploy to the world</h4>
+                  <button class="copy-btn">📋</button>
+                </div>
+                <p class="step-desc">One command to deploy your app to production.</p>
+                <div class="terminal-block">
+                  <div class="t-line">atlas deploy <span class="t-flag">--env</span> production</div>
+                  <div class="t-success">✓ Deployment successful</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-block">
+            <h3>Explore core capabilities</h3>
+            <div class="capabilities-grid grid-4">
+              <a href="#" class="cap-card">
+                <div class="cap-icon text-primary bg-purple-light">🧠</div>
+                <div class="cap-text">
+                  <strong>AI Engine</strong>
+                  <span>Generation, iteration, and repair</span>
+                </div>
+              </a>
+              <a href="#" class="cap-card">
+                <div class="cap-icon text-blue bg-blue-light">🤖</div>
+                <div class="cap-text">
+                  <strong>Agent System</strong>
+                  <span>Multi-agent coordination & repair</span>
+                </div>
+              </a>
+              <a href="#" class="cap-card">
+                <div class="cap-icon text-teal bg-teal-light">🧩</div>
+                <div class="cap-text">
+                  <strong>Template Engine</strong>
+                  <span>Reusable UI DNA and Archetypes</span>
+                </div>
+              </a>
+              <a href="#" class="cap-card">
+                <div class="cap-icon text-orange bg-orange-light">⚙️</div>
+                <div class="cap-text">
+                  <strong>Workflow Engine</strong>
+                  <span>DAG-based workflow execution</span>
+                </div>
+              </a>
+              <a href="#" class="cap-card">
+                <div class="cap-icon text-pink bg-pink-light">🔌</div>
+                <div class="cap-text">
+                  <strong>Contracts Layer</strong>
+                  <span>Deterministic AI outputs</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+          <div class="right-widget ai-assistant">
+            <div class="widget-header flex items-center gap-2">
+              <span class="text-primary">✨</span>
+              <strong>AI Assistant</strong>
+            </div>
+            <p>Get answers, generate code, and understand concepts instantly.</p>
+            <button class="ask-btn flex justify-between items-center w-full">
+              Ask Atlas <span>→</span>
+            </button>
+          </div>
+          
+          <div class="right-widget">
+            <strong>On this page</strong>
+            <ul class="page-nav">
+              <li><a href="#" class="active">Get started in minutes</a></li>
+              <li><a href="#">Explore core capabilities</a></li>
+              <li><a href="#">Why OneAtlas?</a></li>
+              <li><a href="#">What's next?</a></li>
+            </ul>
+          </div>
+          
+          <div class="right-widget">
+            <strong>Quick actions</strong>
+            <ul class="action-list">
+              <li><a href="#"><span class="action-icon">⌨️</span> Run API example</a></li>
+              <li><a href="#"><span class="action-icon">🔗</span> Copy page link</a></li>
+              <li><a href="#"><span class="action-icon">📥</span> Download SDK</a></li>
+              <li><a href="#"><span class="action-icon">⚠️</span> Report an issue</a></li>
+            </ul>
+          </div>
+          
+          <div class="right-widget">
+            <strong>Popular guides</strong>
+            <ul class="action-list">
+              <li><a href="#" class="flex justify-between"><span>Building your first agent</span> <span>→</span></a></li>
+              <li><a href="#" class="flex justify-between"><span>Working with tools</span> <span>→</span></a></li>
+              <li><a href="#" class="flex justify-between"><span>Deploying to production</span> <span>→</span></a></li>
+              <li><a href="#" class="flex justify-between"><span>Memory and context</span> <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <div class="right-widget">
+            <strong>Advanced topics</strong>
+            <ul class="action-list">
+              <li><a href="#" class="flex justify-between"><span>Custom Model Routing</span> <span>→</span></a></li>
+              <li><a href="#" class="flex justify-between"><span>Building Integrations</span> <span>→</span></a></li>
+              <li><a href="#" class="flex justify-between"><span>RBAC Setup</span> <span>→</span></a></li>
+              <li><a href="#" class="flex justify-between"><span>Multi-tenant Data</span> <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <div class="right-widget cloud-promo">
+            <strong>Atlas Cloud</strong>
+            <p>Deploy globally with one click.</p>
+            <a href="#" class="learn-more">Learn more →</a>
+            <div class="cloud-visual"></div>
+          </div>
+        </aside>
+      </div>
+      
+      <!-- Floating Chat Bar -->
+      <div class="floating-chat-bar">
+        <div class="chat-input-wrapper">
+          <span class="chat-icon text-primary">✨</span>
+          <input type="text" placeholder="Ask Atlas anything about this page...">
+          <div class="chat-actions">
+            <button class="chat-action-btn">Explain</button>
+            <button class="chat-action-btn">Generate code</button>
+            <button class="chat-action-btn">Find example</button>
+            <button class="chat-submit btn-primary">→</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="./script.js?v=6"></script>
+</body>
+</html>
