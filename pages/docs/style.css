@@ -1,3 +1,26 @@
+/* Y Combinator Theme Overrides */
+:root {
+  --color-primary: #ff6600;
+  --color-primary-hover: #e05a00;
+  --color-bg: #f6f6ef;
+  --color-bg-alt: #f6f6ef;
+  --color-text: #000000;
+  --color-text-muted: #828282;
+  --color-border: #e0e0d8;
+  --gradient-primary: linear-gradient(135deg, #ff6600, #ff8833);
+}
+
+[data-theme="dark"] {
+  --color-primary: #ff6600;
+  --color-primary-hover: #e05a00;
+  --color-bg: #1e1e1e;
+  --color-bg-alt: #252525;
+  --color-text: #e0e0e0;
+  --color-text-muted: #828282;
+  --color-border: #444444;
+  --gradient-primary: linear-gradient(135deg, #ff6600, #ff8833);
+}
+
 /* Docs Layout */
 .docs-layout {
   display: flex;
