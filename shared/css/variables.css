@@ -1,19 +1,19 @@
 :root {
   /* Colors */
-  --color-primary: #5a32fa;
-  --color-primary-hover: #4a21ea;
-  --color-secondary: #ff3366;
-  --color-bg: #fdfdfd;
-  --color-bg-alt: #f5f5fa;
-  --color-text: #1a1a2e;
-  --color-text-muted: #6b7280;
-  --color-border: #e5e7eb;
+  --color-primary: #ff6600;
+  --color-primary-hover: #e05a00;
+  --color-secondary: #ff8833;
+  --color-bg: #f6f6ef;
+  --color-bg-alt: #ffffff;
+  --color-text: #000000;
+  --color-text-muted: #828282;
+  --color-border: #e0e0d8;
   --color-footer-bg: #0b1120;
   --color-footer-text: #94a3b8;
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #5a32fa, #ff3366);
-  --gradient-text: linear-gradient(135deg, #5a32fa, #ff3366);
+  --gradient-primary: linear-gradient(135deg, #ff6600, #ff8833);
+  --gradient-text: linear-gradient(135deg, #ff6600, #ff8833);
   
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -23,7 +23,7 @@
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
-  --shadow-glow: 0 0 30px rgba(90, 50, 250, 0.3);
+  --shadow-glow: 0 0 30px rgba(255, 102, 0, 0.3);
 
   /* Radius */
   --radius-sm: 0.25rem;
