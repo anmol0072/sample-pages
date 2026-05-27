@@ -132,9 +132,9 @@
       <div class="content-scroll flex">
         <div class="content-body">
           <div class="content-header relative">
-            <span class="badge-native text-primary">✨ AI-NATIVE DEVELOPMENT PLATFORM</span>
-            <h1 class="docs-title">Build and ship<br>AI apps, <span class="text-gradient">faster.</span></h1>
-            <p class="docs-subtitle">OneAtlas gives you the tools to build, deploy, and scale production-ready AI applications.</p>
+            <span class="badge-native text-primary">✨ AI-NATIVE INTERNAL TOOLS PLATFORM</span>
+            <h1 class="docs-title">Build AI apps<br>at <span class="text-gradient">extreme scale.</span></h1>
+            <p class="docs-subtitle">OneAtlas is a cost-efficient, serverless, multi-tenant platform for generating business applications, internal tools, and dashboards in seconds.</p>
             <div class="header-actions flex gap-4">
               <button class="btn btn-primary">Start Building →</button>
               <button class="btn-play"><span class="play-icon">▶</span> Watch overview</button>
@@ -193,13 +193,14 @@
                   <h4>Generate an application</h4>
                   <button class="copy-btn">📋</button>
                 </div>
-                <p class="step-desc">Use the AI Engine to generate a Next.js UI and Prisma schema.</p>
+                <p class="step-desc">Use the AI Gateway (Claude/Gemini/OpenAI) to generate your frontend in Next.js and TailwindCSS.</p>
                 <div class="code-block">
 <pre><code>import { OneAtlas } from 'oneatlas';
 
-await OneAtlas.generate({
-  type: "Admin Panel",
-  database: "neon-postgres"
+const app = await OneAtlas.generate({
+  type: "Admin Dashboard",
+  database: "neon-postgres",
+  auth: "clerk"
 });</code></pre>
                 </div>
               </div>
@@ -209,7 +210,7 @@ await OneAtlas.generate({
                   <h4>Build a workflow</h4>
                   <button class="copy-btn">📋</button>
                 </div>
-                <p class="step-desc">Connect agents, data and logic in a powerful workflow.</p>
+                <p class="step-desc">Connect Triggers and Actions (Slack, HTTP, DB) in our DAG workflow engine.</p>
                 <div class="workflow-visual">
                   <div class="w-node">✨</div>
                   <div class="w-arrow">→</div>
@@ -224,7 +225,7 @@ await OneAtlas.generate({
                   <h4>Deploy to the world</h4>
                   <button class="copy-btn">📋</button>
                 </div>
-                <p class="step-desc">One command to deploy your app to production.</p>
+                <p class="step-desc">Deploy automatically to a unique isolated subdomain on Cloudflare Edge.</p>
                 <div class="terminal-block">
                   <div class="t-line">atlas deploy <span class="t-flag">--env</span> production</div>
                   <div class="t-success">✓ Deployment successful</div>
@@ -265,10 +266,10 @@ await OneAtlas.generate({
                 </div>
               </a>
               <a href="#" class="cap-card">
-                <div class="cap-icon text-pink bg-pink-light">🔌</div>
+                <div class="cap-icon text-pink bg-pink-light">🏢</div>
                 <div class="cap-text">
-                  <strong>Contracts Layer</strong>
-                  <span>Deterministic AI outputs</span>
+                  <strong>Enterprise Ready</strong>
+                  <span>RBAC, SAML, and Audit Logging</span>
                 </div>
               </a>
             </div>

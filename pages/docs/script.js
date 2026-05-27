@@ -210,6 +210,13 @@ await DeploymentEngine.deploy({
         const rawText = link.textContent.trim();
         // Extract plain text by stripping leading emojis/icons if present
         const itemName = rawText.replace(/^[^\w\s]+/, '').trim() || rawText;
+        const safeKey = itemName.replace(/[^a-zA-Z0-9]/g, '');
+
+        // Utility actions that shouldn't open a doc page
+        if (['Copypagelink', 'DownloadSDK', 'Reportanissue', 'RunAPIexample'].includes(safeKey)) {
+          showToast(itemName + ' action triggered.', 'info');
+          return;
+        }
 
         if (!contentBody) {
           showToast('Opened document: ' + itemName, 'success');
@@ -772,6 +779,40 @@ $ atlas deploy --prod`,
               { icon: '🤖', title: 'Agent Mastery', desc: 'Learn to build multi-agent teams.' },
               { icon: '🛠️', title: 'Tool Creation', desc: 'Integrate external APIs securely.' },
               { icon: '🚀', title: 'Deployment', desc: 'Ship to production confidently.' }
+            ]
+          },
+          'WhyOneAtlas': {
+            subtitle: 'AI-Native, Serverless, Cost-Efficient',
+            overview: 'OneAtlas is built on three core engineering principles: Low-Cost Architecture, AI-First Development, and an Enterprise-Ready Foundation. We avoid heavy VMs and Kubernetes in favor of Edge computing and Serverless Postgres.',
+            code: `// Built for extreme scale and zero idle costs
+import { EdgeArchitecture } from '@oneatlas/core';
+
+await EdgeArchitecture.initialize({
+  frontend: 'Cloudflare Pages',
+  backend: 'Cloudflare Workers',
+  database: 'Neon Serverless Postgres',
+  storage: 'Cloudflare R2'
+});`,
+            features: [
+              { icon: '💸', title: 'Low Cost', desc: 'Shared multi-tenant usage-based infra.' },
+              { icon: '🤖', title: 'AI-First', desc: 'Designed for Cursor and Claude workflows.' },
+              { icon: '🏢', title: 'Enterprise Ready', desc: 'RBAC, Audit logs, and SSO built-in.' }
+            ]
+          },
+          'Whatsnext': {
+            subtitle: 'The Roadmap to Scale',
+            overview: 'Our MVP focuses on generating internal tools, CRUD apps, and dashboards. Moving forward, OneAtlas will scale into a massive integrations ecosystem and introduce sandboxed MicroVM isolation for complex backend workloads.',
+            code: `// Future Roadmap Capabilities
+const roadmap = [
+  "NestJS Event-Driven Microservices",
+  "Internal Auth Abstraction (SCIM/SAML)",
+  "Advanced Visual Editor",
+  "Sandboxed MicroVM Runtime"
+];`,
+            features: [
+              { icon: '📈', title: 'MicroVMs', desc: 'Isolated heavy workloads.' },
+              { icon: '🔗', title: 'Integrations OS', desc: 'The ultimate long-term moat.' },
+              { icon: '🛡️', title: 'Compliance', desc: 'SOC2 and HIPAA ready infrastructure.' }
             ]
           }
         };
