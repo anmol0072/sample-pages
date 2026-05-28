@@ -66,7 +66,7 @@
   text-transform: uppercase;
 }
 
-.nav-group { margin-bottom: 1.25rem; }
+.nav-group { margin-bottom: 0.75rem; }
 .nav-item {
   display: flex;
   align-items: center;
@@ -159,10 +159,10 @@
 
 /* Content Scroll */
 .content-scroll { flex: 1; overflow-y: auto; }
-.content-body { flex: 1; padding: 2rem 3rem 6rem; max-width: 800px; margin: 0 auto; }
+.content-body { flex: 1; padding: 1.5rem 2rem 4rem; max-width: 1000px; margin: 0 auto; width: 100%; }
 
 /* Header Content */
-.content-header { margin-bottom: 2.5rem; position: relative; }
+.content-header { margin-bottom: 1.5rem; position: relative; }
 .badge-native { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.05em; display: inline-block; margin-bottom: 0.5rem; }
 .docs-title { font-size: 2rem; line-height: 1.2; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
 .docs-subtitle { font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1.5rem; max-width: 550px; }
@@ -175,18 +175,18 @@
 .v-label { position: absolute; background: white; border: 1px solid var(--color-border); padding: 0.4rem 0.8rem; border-radius: var(--radius-full); font-size: 0.8rem; box-shadow: var(--shadow-sm); }
 
 /* Role Selector */
-.role-selector { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-bottom: 2.5rem; }
-.role-btn { border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 0.75rem; display: flex; align-items: center; gap: 0.75rem; background: white; text-align: left; }
+.role-selector { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin-bottom: 1.5rem; }
+.role-btn { border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 0.5rem; display: flex; align-items: center; gap: 0.5rem; background: white; text-align: left; }
 .role-btn:hover { border-color: var(--color-primary); box-shadow: var(--shadow-sm); }
 .role-icon { font-size: 1.2rem; }
 .role-text strong { display: block; font-size: 0.85rem; font-weight: 600; }
 .role-text span { font-size: 0.75rem; color: var(--color-text-muted); }
 
 /* Steps Grid */
-.section-block { margin-bottom: 2.5rem; }
-.section-block h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.step-card { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem; background: white; min-width: 0; overflow: hidden; }
+.section-block { margin-bottom: 1.5rem; }
+.section-block h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.25rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.step-card { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 0.75rem; background: white; min-width: 0; overflow: hidden; }
 .step-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
 .step-num { width: 20px; height: 20px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: bold; }
 .bg-purple { background: #ff8833; }
@@ -256,9 +256,9 @@
 .t-success { color: #3fb950; margin-top: 0.75rem; font-size: 0.8rem; }
 
 /* Capabilities Grid */
-.grid-4 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; } /* Will wrap due to auto-fill style if needed, let's use flex or adjusted grid */
-.capabilities-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-.cap-card { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem; display: flex; align-items: center; gap: 1rem; background: white; }
+.grid-4 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; } /* Will wrap due to auto-fill style if needed, let's use flex or adjusted grid */
+.capabilities-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
+.cap-card { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 0.75rem; display: flex; align-items: center; gap: 0.75rem; background: white; }
 .cap-card:hover { border-color: var(--color-primary); box-shadow: var(--shadow-sm); }
 .cap-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
 .cap-text strong { display: block; font-size: 0.9rem; }
