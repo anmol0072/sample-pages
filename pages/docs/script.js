@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = e.target.closest('.step-card') || e.target.closest('.section-block');
         let textToCopy = '';
         
-        const codeBlock = card.querySelector('pre code');
+        const codeBlock = card.querySelector('.code-block:not(.hidden) pre code') || card.querySelector('pre code');
         const terminalBlock = card.querySelector('.t-line');
         
         if (codeBlock) {
@@ -878,4 +878,106 @@ const roadmap = [
       }
     });
   });
+
+  // 6. Search Modal Logic
+  const topSearchInput = document.querySelector('.search-container input');
+  const searchModal = document.getElementById('searchModal');
+  const modalSearchInput = document.getElementById('searchInput');
+  const closeSearchBtn = document.querySelector('.close-search-btn');
+
+  function openSearch() {
+    if (searchModal) {
+      searchModal.classList.remove('hidden');
+      setTimeout(() => modalSearchInput && modalSearchInput.focus(), 100);
+    }
+  }
+
+  function closeSearch() {
+    if (searchModal) {
+      searchModal.classList.add('hidden');
+    }
+  }
+
+  if (topSearchInput) {
+    topSearchInput.addEventListener('click', openSearch);
+    topSearchInput.addEventListener('focus', (e) => { e.target.blur(); openSearch(); });
+  }
+
+  if (closeSearchBtn) {
+    closeSearchBtn.addEventListener('click', closeSearch);
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
+    if (e.key === 'Escape') {
+      closeSearch();
+    }
+  });
+
+  if (searchModal) {
+    searchModal.addEventListener('click', (e) => {
+      if (e.target === searchModal) {
+        closeSearch();
+      }
+    });
+    
+    // Close modal if a search result is clicked
+    const resultItems = searchModal.querySelectorAll('.search-result-item');
+    resultItems.forEach(item => {
+      item.addEventListener('click', closeSearch);
+    });
+  }
+
+  // 7. Code Block Tabs
+  const codeTabs = document.querySelectorAll('.tab-btn');
+  codeTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const parent = tab.closest('.code-tabs');
+      if(!parent) return;
+      
+      parent.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const targetId = tab.getAttribute('data-target');
+      const container = tab.closest('.step-card');
+      if (container) {
+        container.querySelectorAll('.code-block[id^="code-"]').forEach(block => {
+          block.classList.add('hidden');
+        });
+        const targetBlock = document.getElementById(targetId);
+        if (targetBlock) {
+          targetBlock.classList.remove('hidden');
+        }
+      }
+    });
+  });
+
+  // 8. Scroll Spy (On this page)
+  const scrollContainer = document.querySelector('.content-scroll');
+  if (scrollContainer) {
+    const sections = document.querySelectorAll('.section-block[id], .content-header[id]');
+    
+    scrollContainer.addEventListener('scroll', () => {
+      let currentId = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollContainer.scrollTop >= (sectionTop - 100)) {
+          currentId = section.getAttribute('id');
+        }
+      });
+      
+      if (currentId) {
+        const navLinks = document.querySelectorAll('.page-nav a');
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentId) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
 });
